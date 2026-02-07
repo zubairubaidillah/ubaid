@@ -3,62 +3,88 @@ web
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAA Visual | Videographer & Photographer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    .card {
+      width: 100%;
+      max-width: 380px;
+      padding: 32px 24px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(255,255,255,0.6);
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin: 8px 0 4px;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    p {
+      margin: 0 0 24px;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+    .links a {
+      display: block;
+      margin: 12px 0;
+      padding: 14px 16px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .links a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 0.75rem;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 <body>
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="Profile" class="avatar" />
+    <h1>Nama Kamu</h1>
+    <p>Web Developer · Creative Thinker</p>
 
-  <!-- Hero -->
-  <header class="hero">
-    <h1>SAA VISUAL</h1>
-    <p>Capturing Moments, Creating Stories</p>
-    <a href="#contact" class="btn">Book Now</a>
-  </header>
-
-  <!-- About -->
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      SAA Visual adalah videographer & photographer profesional
-      yang berfokus pada storytelling visual berkualitas tinggi
-      untuk brand, event, dan personal.
-    </p>
-  </section>
-
-  <!-- Services -->
-  <section class="services">
-    <h2>Services</h2>
-    <div class="service-box">
-      <div>🎥 Videography</div>
-      <div>📸 Photography</div>
-      <div>🎬 Editing & Color Grading</div>
-      <div>📷 Product & Event Shoot</div>
+    <div class="links">
+      <a href="https://github.com/username" target="_blank">GitHub</a>
+      <a href="https://instagram.com/username" target="_blank">Instagram</a>
+      <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/username" target="_blank">Twitter / X</a>
     </div>
-  </section>
 
-  <!-- Portfolio -->
-  <section class="portfolio">
-    <h2>Portfolio</h2>
-    <div class="gallery">
-      <div class="item">Project 1</div>
-      <div class="item">Project 2</div>
-      <div class="item">Project 3</div>
-      <div class="item">Project 4</div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p>Email: saavisual@email.com</p>
-    <p>Instagram: @saavisual</p>
-  </section>
-
-  <footer>
-    <p>© 2026 SAA Visual. All Rights Reserved.</p>
-  </footer>
-
+    <footer>
+      © 2026 · Built with ❤️
+    </footer>
+  </div>
 </body>
 </html>
